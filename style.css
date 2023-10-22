@@ -1,0 +1,130 @@
+body {
+    background-color: #111111;
+}
+
+.square {
+    background-color: #101010;
+    float: left;
+    margin-left: 220px;
+    width: 800px;
+    height: 814px;
+    border: 2px solid white;
+    position: relative;
+}
+
+.row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8 {
+    display: flex;
+    margin-left: 0;
+}
+
+.cell {
+    margin-left: 0;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+}
+
+.black {
+    background-color: black;
+}
+
+.yellow {
+    background-color: #fcf388;
+}
+
+h1 {
+    margin-left: 430px;
+    margin-top: 0;
+    float: left;
+    font-size: 56px;
+    color: #fff;
+    text-shadow: 0 0 4px #ff9933, 0 0 13px #ff9933, 0 0 20px #ff9933, 0 0 80px #ff9933, 0 0 10px #ff8c1a, 0 0 170px #ff8000;
+}
+
+/* Стилі для легенди */
+.legend {
+    position: absolute;
+    top: 80px; /* Змініть це значення для коректного позиціювання */
+    left: 200px; /* Змініть це значення для коректного позиціювання */
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    display: flex;
+}
+
+/* Стилі для лівих цифр */
+.left-numbers {
+    position: absolute;
+    left:0px;
+    top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-numbers div {
+    margin-left:-20px;
+    margin-top: 0;
+    float: left;
+
+    width: 40px;
+    height: 105px;
+    text-align: center;
+}
+
+
+
+/* Стилі для правих цифр */
+.right-numbersR {
+    position: absolute;
+    left: 840px;
+    top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotate(180deg);
+
+}
+
+.right-numbersR div {
+    
+    width: 40px;
+    height: 105px;
+    text-align: center;
+}
+
+
+/* Стилі для верхніх букв */
+.top-lettersUp {
+    position: absolute;
+    left: 50px;
+    top: -10px;
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+    transform: rotate(180deg);
+
+    
+}
+
+.top-lettersUp div {
+    width: 40px;
+    text-align: center;
+}
+
+/* Стилі для нижніх букв */
+.bottom-letters {
+    position: absolute;
+    bottom: -890px; /* Змініть це значення для коректного позиціювання */
+    left: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+}
+
+.bottom-letters div {
+    width: 40px;
+    text-align: center;
+}
+
